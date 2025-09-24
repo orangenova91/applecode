@@ -1,3 +1,4 @@
+import Link from "next/link"  
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -19,9 +20,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+    <body>
+          <div className="navbar">
+          <Link href="/">홈</Link>
+          <Link href="/list">list</Link>
+          <Link href="/cart">cart</Link>
+        </div>
         {children}
       </body>
     </html>
   );
 }
+
