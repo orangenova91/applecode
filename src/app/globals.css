@@ -145,5 +145,23 @@ body{
 
 
   .contents{
+    background-color: gray;
+    height: 1000px;
     margin-left: 200px;
+  }
+
+
+  .subject{
+    background-color: #6dd5;
+    text-align: center;
+    width: 300px;
+    height: 150px;
+    border-radius: 20px;
+
+  }
+
+  .grade{
+    width:100px;
+    height:20px;
+    background-color: #ffa500;
   }

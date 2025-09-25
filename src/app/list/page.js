@@ -9,10 +9,11 @@ export default function list() {
         //console.log(i)
     }
     )
-
-  
-  return(
-    <div>
+    
+    
+    
+    return(
+        <div>
         <h4 className="title">상품목록</h4>
 
         {
