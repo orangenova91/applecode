@@ -23,7 +23,8 @@ body{
     border-radius: 5px;
 }
 
-
+/*
+1. 상단바(원본)
 .navbar{
     background: white;
     padding: 20px;
@@ -34,7 +35,54 @@ body{
     margin-right: 10px;
     text-decoration: none;
 }
-
+*/
+/* 상단바 전체 컨테이너 스타일 */
+.navbar {
+    /* 상단바 너비는 꽉 채우기 */
+    width: 100%;
+    /* 배경색 */
+    background-color: #333;
+    /* 패딩 */
+    padding: 10px 20px;
+    /* 그림자 효과로 입체감 주기 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    /* 상단에 고정 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* 다른 요소들 위에 보이도록 z-index 설정 */
+    z-index: 1000;
+    /* 링크들을 가로로 배치하기 위해 Flexbox 사용 */
+    display: flex;
+    /* 링크들 사이에 공간 만들기 */
+    gap: 20px;
+  }
+  
+  /* 상단바 링크 스타일 */
+  .navbar a {
+    /* 텍스트 색상 */
+    color: #fff;
+    /* 밑줄 제거 */
+    text-decoration: none;
+    /* 글꼴 크기 */
+    font-size: 18px;
+    /* 마우스 오버 시 색상 전환 효과 */
+    transition: color 0.3s;
+    /* 글꼴 두께 */
+    font-weight: bold;
+  }
+  
+  /* 상단바 링크에 마우스 올렸을 때 스타일 */
+  .navbar a:hover {
+    /* 텍스트 색상 변경 */
+    color: #ffa500;
+  }
+  
+  /* body에 상단바 높이만큼의 마진 주기 */
+  body {
+    /* 상단바 높이 (패딩 포함)만큼 여백을 주어 콘텐츠가 가려지지 않게 함 */
+    margin-top: 60px; /* navbar의 padding과 높이를 고려하여 적절히 조절 */
+  }
 .food-img{
   width: 100%;
   height: auto;
@@ -48,3 +96,54 @@ body{
     border-bottom: 1px solid gray;
     line-height: 0px;
 }
+
+/* 사이드바 전체 컨테이너 스타일 */
+.sidebar {
+    /* 사이드바 너비 설정 */
+    width: 150px;
+    /* 배경색 */
+    background-color: #f0f0f0;
+    /* 패딩 */
+    padding: 20px;
+    /* 그림자 효과로 입체감 주기 */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    /* 사이드바를 왼쪽에 고정 */
+    position: fixed;
+    top: 60px;
+    left: 0;
+    /* 꽉 채우기 */
+    height: calc(100%);
+  }
+  
+  /* 링크 스타일 */
+  .sidebar a {
+    /* 링크를 블록 요소로 만들어 클릭 영역 넓히기 */
+    display: block;
+    /* 패딩 */
+    padding: 10px 15px;
+    /* 텍스트 색상 */
+    color: #333;
+    /* 밑줄 제거 */
+    text-decoration: none;
+    /* 마우스 오버 시 색상 전환 효과 */
+    transition: background-color 0.3s, color 0.3s;
+    /* 글꼴 크기 */
+    font-size: 16px;
+    /* 링크 사이 간격 */
+    margin-bottom: 5px;
+    /* 모서리 둥글게 */
+    border-radius: 5px;
+  }
+  
+  /* 링크에 마우스 올렸을 때 스타일 */
+  .sidebar a:hover {
+    /* 배경색 변경 */
+    background-color: #ddd;
+    /* 텍스트 색상 변경 */
+    color: #000;
+  }
+
+
+  .contents{
+    margin-left: 200px;
+  }

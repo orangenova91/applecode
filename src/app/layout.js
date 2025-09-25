@@ -22,11 +22,21 @@ export default function RootLayout({ children }) {
     <html lang="en">
     <body>
           <div className="navbar">
-          <Link href="/">홈</Link>
-          <Link href="/list">list</Link>
-          <Link href="/cart">cart</Link>
-        </div>
-        {children}
+            <Link href="/">홈</Link>
+            <Link href="/list">list</Link>
+            <Link href="/cart">cart</Link>
+          </div>
+          <div className="sidebar">
+            <Link href="/classroom">강의실</Link>
+            <Link href="/hallway">복도</Link>
+            <Link href="/place1">장소1</Link>
+            <Link href="/place2">장소2</Link>
+            <Link href="/place3">장소3</Link>
+          </div>
+          <div className="contents">
+
+              {children}
+          </div>
       </body>
     </html>
   );
