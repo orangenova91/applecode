@@ -154,8 +154,8 @@ body{
   .subject{
     background-color: #6dd5;
     text-align: center;
-    width: 300px;
-    height: 150px;
+    width: 200px;
+    height: 70px;
     border-radius: 20px;
 
   }
@@ -165,3 +165,21 @@ body{
     height:20px;
     background-color: #ffa500;
   }
+
+  .tab-navigation button {
+                    padding: 10px 15px;
+                    border: none;
+                    background: none;
+                    cursor: pointer;
+                    font-size: 16px;
+                    border-bottom: 3px solid transparent;
+                }
+                .tab-navigation button.active {
+                    color: #007bff; /* 파란색으로 활성화 표시 */
+                    font-weight: bold;
+                    border-bottom: 3px solid #007bff;
+                }
+                .tab-display {
+                    padding-top: 20px;
+                    border-top: 1px solid #ddd;
+                }

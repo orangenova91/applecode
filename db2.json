@@ -1,0 +1,16 @@
+{
+    "지구과학": [
+        {"year": "2025", "semester":"1", "curriculum": "2022개정교육과정", "subtitle":"지구과학", "instructor":"박주현","course description":"","evaplan":"","location":"물리/지구과학실","grade": "1학년"},
+        {"grade": "2학년", "subjectname": "지구시스템과학", "curriculum": "2022개정교육과정"},
+        {"grade": "3학년", "subjectname": "행성우주과학", "curriculum": "2022개정교육과정"},
+        {"grade": "4학년", "subjectname": "행성우주과학", "curriculum": "2022개정교육과정"}
+    ],
+    
+    "scripts": {
+      "watch:json-server": "json-server db.json --port 3000",
+      "watch:vite": "vite",
+      "dev": "concurrently npm:watch:*"
+    }
+
+
+  }

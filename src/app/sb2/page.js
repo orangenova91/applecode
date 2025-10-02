@@ -1,4 +1,5 @@
 import Link from "next/link";
+
 export default async function(){
     
     const resp = await fetch('http://localhost:9999/subject');
@@ -12,11 +13,12 @@ export default async function(){
                 return <li key={subject.grade}>{subject.grade}:{subject.subjectname}_{subject.curricclum}</li>
             })}
             */}
+            <div><Link href={"/"+"newsub"}>새 강의 만들기</Link></div>
             
             {subject.map((a,i)=>{
                 return(
                         <div className="subject" key={i}>
-                            <Link href={"/"}><h4><span className="grade">{a.grade}</span>:{a.subjectname}<br></br>({a.curricclum})</h4></Link>
+                            <Link href={"/sb2/"+a.id}><h4><span className="grade">{a.year} 학년도 {a.semester} 학기</span><br></br>{a.subtitle}<br></br>({a.instructor})</h4></Link>
                         </div>
                         
                     )

@@ -1,14 +1,93 @@
 {
-    "subject": [
-        {"grade": "1학년", "subjectname": "지구과학", "curricclum": "2022개정교육과정"},
-        {"grade": "2학년", "subjectname": "지구시스템과학", "curricclum": "2022개정교육과정"},
-        {"grade": "3학년", "subjectname": "행성우주과학", "curricclum": "2022개정교육과정"},
-        {"grade": "4학년", "subjectname": "행성우주과학", "curricclum": "2022개정교육과정"}
-    ],
-    
-    "scripts": {
-      "watch:json-server": "json-server db.json --port 3000",
-      "watch:vite": "vite",
-      "dev": "concurrently npm:watch:*"
+  "subject": [
+    {
+      "id": "1a2b",
+      "year": "2025",
+      "semester": "1",
+      "curriculum": "2022개정교육과정",
+      "subtitle": "물리1",
+      "instructor": "감승엽",
+      "coursedescription": "",
+      "evaplan": "",
+      "location": "물리/지구과학실",
+      "grade": "2학년"
+    },
+    {
+      "id": "3c4d",
+      "year": "2025",
+      "semester": "1",
+      "curriculum": "2022개정교육과정",
+      "subtitle": "화학1",
+      "instructor": "홍정민",
+      "coursedescription": "",
+      "evaplan": "",
+      "location": "화학실",
+      "grade": "2학년"
+    },
+    {
+      "id": "5e6f",
+      "year": "2025",
+      "semester": "2",
+      "curriculum": "2022개정교육과정",
+      "subtitle": "생명과학",
+      "instructor": "박정식",
+      "coursedescription": "",
+      "evaplan": "",
+      "location": 2401,
+      "grade": "2학년"
+    },
+    {
+      "id": "7g8h",
+      "year": "2025",
+      "semester": "2",
+      "curriculum": "2022개정교육과정",
+      "subtitle": "지구과학",
+      "instructor": "박주현",
+      "coursedescription": "",
+      "evaplan": "",
+      "location": "물리/지구과학실",
+      "grade": "2학년"
+    },
+    {
+      "id": "9i0j",
+      "year": "2025",
+      "semester": "2",
+      "curriculum": "2022개정교육과정",
+      "subtitle": "통합과학",
+      "instructor": "박정식,박주현",
+      "coursedescription": "",
+      "evaplan": "",
+      "location": "물리/지구과학실",
+      "grade": "1학년"
+    },
+    {
+      "id": "6ef7",
+      "year": "2025",
+      "semester": "1",
+      "curriculum": "2022개정교육과정",
+      "subtitle": "사회문화",
+      "instructor": "김선영",
+      "coursedescription": "열심히",
+      "evaplan": "지필 50 수행 50",
+      "location": "2406",
+      "grade": "3"
+    },
+    {
+      "id": "9344",
+      "year": "12ㄷ",
+      "semester": "ㄹ",
+      "curriculum": "ㅈㄷㄹ",
+      "subtitle": "21ㄷ",
+      "instructor": "ㄴㅇㄹ",
+      "coursedescription": "ㅁㄴㄹㄴㅇㄹ",
+      "evaplan": "ㄴㅇㄹ",
+      "location": "ㅇㄴㄹ",
+      "grade": "ㅁㄴㄹ"
     }
+  ],
+  "scripts": {
+    "watch:json-server": "json-server db.json --port 3000",
+    "watch:vite": "vite",
+    "dev": "concurrently npm:watch:*"
   }
+}

@@ -8,6 +8,7 @@ export default function sb1Layout({ children }){
             
             <div> 
 
+            <h1>내 강의실</h1>
             {children}
             
             </div>
