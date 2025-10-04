@@ -83,6 +83,18 @@
       "evaplan": "ㄴㅇㄹ",
       "location": "ㅇㄴㄹ",
       "grade": "ㅁㄴㄹ"
+    },
+    {
+      "id": "3e7d",
+      "year": "2025",
+      "semester": "2",
+      "curriculum": "2022개정교육과정",
+      "subtitle": "국어",
+      "instructor": "김태영",
+      "coursedescription": "ㅁㄴ아러ㅣㅁㅇㄴ러ㅣ",
+      "evaplan": "수행20 지필39",
+      "location": "2403",
+      "grade": "2"
     }
   ],
   "scripts": {

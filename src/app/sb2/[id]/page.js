@@ -2,9 +2,13 @@
 import ClassroomTabs from "./ClassroomTabs";
 export default async function classroom({params}) {
     
-    // 1. URL 인코딩된 ID를 디코딩하여 사용합니다.
-    const rawId = params.id;
-    const decodedId = decodeURIComponent(rawId); 
+// 1. URL 인코딩된 ID를 디코딩하여 사용합니다.
+    // params 객체를 await 합니다. (Next.js 15의 App Router 규칙)
+    const { id: rawId } = await params; 
+    
+    // 기존의 decodedId는 subject.subtitle로 대체되어 이제 사용하지 않습니다.
+    // const rawId = params.id; // ❌ 오류 발생 지점
+    const decodedId = decodeURIComponent(rawId);
     
     // 2. fetch 요청을 await 하고, 응답을 변환하는 코드를 추가합니다.
     const resp = await fetch(`http://localhost:9999/subject/${rawId}`); 

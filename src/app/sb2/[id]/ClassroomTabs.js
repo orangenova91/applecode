@@ -1,5 +1,11 @@
 "use client";
 import { useState } from 'react';
+import Attendance from './attendance';  
+import Board from './board';  
+import Assignment from './assignment';
+import Users from './users';
+import Grades from './grades';  
+
 
 // 탭 데이터 구조를 정의합니다.
 const TAB_ITEMS = [
@@ -13,7 +19,7 @@ const TAB_ITEMS = [
 
 export default function ClassroomTabs({ subject, decodedId }) {
     // 'board'를 초기 활성 탭으로 설정
-    const [activeTab, setActiveTab] = useState('board');
+    const [activeTab, setActiveTab] = useState('attendance');
 
     // 탭 내용 렌더링 함수
     const renderContent = () => {
@@ -22,8 +28,9 @@ export default function ClassroomTabs({ subject, decodedId }) {
                 return (
                     <div className="tab-content">
                         <h2>출결</h2>
-                        <p>{subject.title} 출결 확인입니다.</p>
-                        {/* 실제 게시판 컴포넌트가 여기에 들어갑니다. */}
+                        <p>{subject.title} 출결을 확인입니다.</p>
+                        
+                        {<Attendance/>}
                     </div>
                 );
             case 'board':
@@ -31,7 +38,8 @@ export default function ClassroomTabs({ subject, decodedId }) {
                     <div className="tab-content">
                         <h2>게시판</h2>
                         <p>{subject.title} 강좌의 공지사항 및 토론 공간입니다.</p>
-                        {/* 실제 게시판 컴포넌트가 여기에 들어갑니다. */}
+                        
+                        {<Board/>}
                     </div>
                 );
             case 'assignment':
@@ -39,21 +47,23 @@ export default function ClassroomTabs({ subject, decodedId }) {
                     <div className="tab-content">
                         <h2>수업 과제</h2>
                         <p>현재 부여된 과제 목록을 표시합니다.</p>
-                        {/* 과제 목록 컴포넌트 */}
+                        {<Assignment/>}
                     </div>
                 );
-            case 'users':
-                return (
-                    <div className="tab-content">
+                case 'users':
+                    return (
+                        <div className="tab-content">
                         <h2>사용자</h2>
                         <p>강좌에 등록된 학생 및 교사 목록을 표시합니다.</p>
+                        {<Users/>}
                     </div>
                 );
-            case 'grades':
-                return (
-                    <div className="tab-content">
+                case 'grades':
+                    return (
+                        <div className="tab-content">
                         <h2>성적</h2>
                         <p>학생의 성적 정보가 표시됩니다.</p>
+                        {<Grades/>}
                     </div>
                 );
             default:
@@ -63,7 +73,7 @@ export default function ClassroomTabs({ subject, decodedId }) {
 
     return (
         <div className="classroom-tabs-wrapper">
-            <h2>{decodedId} 강좌 관리</h2>
+            <h2>{subject.subtitle} 강좌 관리</h2>
 
             {/* 1. 탭 네비게이션 동적 생성 */}
             <div className="tab-navigation">
