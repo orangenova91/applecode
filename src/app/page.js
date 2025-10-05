@@ -1,4 +1,3 @@
-
 export default function Home() {
   let name = 'park winner'
   let link = 'http://google.com'
