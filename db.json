@@ -95,6 +95,18 @@
       "evaplan": "수행20 지필39",
       "location": "2403",
       "grade": "2"
+    },
+    {
+      "id": "505e",
+      "year": "2026",
+      "semester": "1",
+      "curriculum": "ㄷㄹㄱㅂ",
+      "subtitle": "ㄷㅈㅂㄹ",
+      "instructor": "ㅂㅇㅊㅈ",
+      "coursedescription": "ㅊㅇㅂ",
+      "evaplan": "ㅊㅂ",
+      "location": "ㅊㅂㅇ",
+      "grade": "ㅊ"
     }
   ],
   "scripts": {
